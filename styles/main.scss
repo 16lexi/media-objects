@@ -1,0 +1,26 @@
+html {
+    font-size: 18px;
+    font-family: "Iowan Old Style", Georgia, serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.media-object {
+    display: flex;
+    width: 600px;
+    background-color: #DCDCDC;
+    border-radius: 6px; // for curved corners; don't go nuts
+    padding: .75em;
+    margin: 2px auto;
+    > img {
+        width: 100px;
+        height: 100px;
+        margin-right: .75em;
+        flex-shrink: 0; // do not shrink the img ever!
+    }
+    > .media-text {
+        flex-grow: 1; // do not shrink, but get bigger to take up avaible space; we want you to grow based on the space; it is based on proportion not size; 1= take up all the avabile space, 2= take up to twice as much of proportional space
+    }
+}
